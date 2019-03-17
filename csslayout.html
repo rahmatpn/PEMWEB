@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS LAYOUT</title>
+	<style>
+	#wrapper{
+		margin-left: 350px;
+	}
+
+	.header {
+		width: 784px;
+		height: 200px;
+  		background-color: #ffe699;
+  		font: italic 1em/10em 'trebuchet MS',Arial, Helvetica; 
+  		text-align: center;
+ 		font-size: 20px;
+
+	}
+	.content{
+		height: auto;
+		display: flex;
+	}
+
+	#middle{
+		width: 584px;
+		font: italic 1em/2em 'trebuchet MS',Arial, Helvetica; 
+		text-align: center;
+
+	}
+	#left{
+		width: 200px;
+		font: italic 1em/2em 'trebuchet MS',Arial, Helvetica; 
+		text-align: center;
+
+	}
+	.max-content{
+		height: 400px;
+	}
+
+	.footer {
+		width: 764px;
+		height: 100px;
+		padding: 10px;
+		font: italic 1em/3.5em 'trebuchet MS',Arial, Helvetica; 
+ 		background-color: #666699;
+  		text-align: center;
+	}
+
+
+
+</style>
+</head>
+<body>
+	<div id="wrapper">
+	<div class="header">
+  <p>BAGIAN HEADER(WIDTH:784PX, HEIGHT :200PX)</p>
+</div>
+<div class="content">
+  <div id="left" class="max-content" style="background-color: #ffff00;">KOLOM 1 <br>AUTO HEIGHT<br>WIDTH:200PX</div>
+  <div id="middle"class="max-content" style="background-color: #cc66ff;">KOLOM 2<br/>AUTO HEIGHT<br>WIDTH:584PX</div>
+
+</div>
+
+<div class="footer">
+  <p>FOOTER WIDTH:784 PX HEIGHT : 100 PX</p>
+</div>
+</div>
+</body>
+</html>
